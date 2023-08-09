@@ -1,10 +1,8 @@
-# Zillow_Pipeline
+# Zillow_ ETL_ Pipeline
 
 
-This project revolves around simplifying the process of collecting property details from Zillow for a specific location using the Zillow API. The main tools used here are Python, Airflow, and Azure services.
+This project is all about simplifying how we get property details from Zillow of a specific location. We've built a pipeline using Python that talks to Zillow's API to fetch the data. To keep things organized and automated, we're using Airflow, a tool that helps us schedule tasks. We've set it up to pull data every month.
 
-Python is used to communicate with the Zillow API, fetching property data. Airflow, a scheduling tool, is used to automate this process on a monthly basis. The entire system is hosted on an Azure Virtual Machine, ensuring it runs reliably and efficiently.
+To make sure everything runs smoothly, we've put Airflow on an Azure Virtual Machine. This helps us manage the workload efficiently, especially as we get more data. And we're not stopping there - we're using Azure Blob storage to neatly store the property details in CSV files.
 
-The collected property data is cleaned using Pandas, a popular data manipulation library in Python. After cleaning, the data is organized and saved in a CSV format. Azure Blob storage is employed to store these CSV files securely in the cloud.
-
-This project showcases how a simple combination of programming, automation, and cloud services can streamline the process of collecting, organizing, and storing property data from Zillow, making it easily accessible for future use.
+We're using a library called Pandas to clean up the data and put it in a nice format for the CSV files. If you're curious about the nitty-gritty details, take a look at the code. It's an exciting project that takes the hassle out of gathering property info and shows how these tools can work together for a smoother ETL (Extract, Transform, Load) process.
