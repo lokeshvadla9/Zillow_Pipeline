@@ -1,0 +1,15 @@
+Once you have created VM in Azure with Ubuntu OS, Install the essential packages with below commands
+
+1. sudo apt-get update
+2. sudo apt install python3-pip
+3. sudo pip install apache-airflow
+4. sudo pip install pandas 
+5. sudo pip install azure-storage-blob
+
+
+Once the packages are installed, place the developed rtl, dag files in airflow/dags folder
+and run airflow with below command
+
+airflow standalone
+
+it should run successfully
